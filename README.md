@@ -50,4 +50,4 @@ You can download the compiled PDF versions of these documents from the **[Latest
 The documentation in this repository is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ---
-*Maintained by Tanya Masvita. Visit [ravven.dev](https://blog.ravven.dev) to follow the engineering log.*
+*Maintained by Tanya Masvita. Visit [blog.ravven.dev](https://blog.ravven.dev) to follow the engineering log.*
