@@ -10,9 +10,11 @@
 
 ---
 
-This repository contains the official **Engineering Data Package (EDP)** for Project RAVVEN (**R**ust-based **A**utonomous **V**ehicle for **V**irtual **E**nvironment **N**avigation).
+This repository contains the official **Engineering Data Package (EDP)** for RAVVEN (**R**ust-based **A**utonomous **V**ehicle for **V**irtual **E**nvironment **N**avigation). A dual ESP32 autonomous robot with real-time virtual synchronization. The EDP serves as the technical foundation for an embedded systems engineering course teaching bare-metal Rust development.
 
-Unlike traditional hobbyist guides, RAVVEN documentation is structured as a professional systems engineering suite. These documents define the architecture, communication protocols, and hardware specifications required to build and program the digital twin robot.
+## Overview
+
+Unlike traditional hobbyist guides, RAVVEN documentation is structured as a professional systems engineering suite. These documents define the architecture, communication protocols, and hardware specifications required to build and program the robot.
 
 ## 📂 Document Index
 
