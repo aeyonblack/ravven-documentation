@@ -16,6 +16,16 @@ This repository contains the official **Engineering Data Package (EDP)** for RAV
 
 Unlike traditional hobbyist guides, RAVVEN documentation is structured as a professional systems engineering suite. These documents define the architecture, communication protocols, and hardware specifications required to build and program the robot.
 
+## System Architecture
+![System Architecture](./RAVVEN_architectural_block_diagram_white.png)
+
+**Key Design Elements:**
+
+* **Dual-ESP32 Architecture:** Separation of motor control (MDS) from navigation logic (NavCon) across two microcontrollers
+* **Digital Twin Synchronization:** Physical robot state mirrored in real-time browser-based visualization
+* **UART Inter-Processor Communication:** 19,200 bps serial link optimized for reliability in electrically noisy environments
+* **Bare-Metal Rust Implementation:** Direct hardware control using `no_std` Rust for memory safety and deterministic behavior
+
 ## 📂 Document Index
 
 The documentation is split into four distinct specifications.
