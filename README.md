@@ -12,11 +12,11 @@
 
 This repository contains the official **Engineering Data Package (EDP)** for RAVVEN (**R**ust-based **A**utonomous **V**ehicle for **V**irtual **E**nvironment **N**avigation). A dual ESP32 autonomous robot with real-time virtual synchronization. The EDP serves as the technical foundation for an embedded systems engineering course teaching bare-metal Rust development.
 
-## Overview
+## 🔭 Overview
 
 Unlike traditional hobbyist guides, RAVVEN documentation is structured as a professional systems engineering suite. These documents define the architecture, communication protocols, and hardware specifications required to build and program the robot.
 
-## System Architecture
+## 🏗️ System Architecture
 ![System Architecture](./RAVVEN_architectural_block_diagram_white.png)
 
 **Key Design Elements:**
@@ -26,7 +26,11 @@ Unlike traditional hobbyist guides, RAVVEN documentation is structured as a prof
 * **UART Inter-Processor Communication:** 19,200 bps serial link optimized for reliability in electrically noisy environments
 * **Bare-Metal Rust Implementation:** Direct hardware control using `no_std` Rust for memory safety and deterministic behavior
 
-## 📂 Document Index
+## 📂 Engineering Data Package (EDP) Index
+
+The EDP is a complete repository of manufacturing (3D printing) and design files. The package is organized into **Specifications** (PDFs) and **Hardware Assets** (Source Files)
+
+### 1. Specifications
 
 The documentation is split into four distinct specifications.
 
@@ -36,6 +40,16 @@ The documentation is split into four distinct specifications.
 | **DOC-B** | **Interface Control Document (ICD)** | ✅ **Released** | The technical reference for communication. Defines the UART packet structure, State Machine logic, and Command Library hex codes. |
 | **DOC-C** | **Integration & Assembly Manual** | 🚧 *In Progress* | Step-by-step hardware build guide, BOM (Bill of Materials), and 3D print specifications. |
 | **DOC-D** | **Hardware Reference Manual** | 🚧 *In Progress* | Electrical datasheets, PCB pinouts, and expansion board specifications. |
+
+### 2. Hardware Assets
+
+These are the raw hardware design files
+
+| Artifact | Format | Status | Description |
+| :--- | :--- | :--- | :--- |
+| **3D Models** | `.STL` / `.STEP` | 🚧 *In Progress* | CAD files for the chassis, sensor mounts, and motor brackets. |
+| **PCB Design** | KiCad / Gerber | 🚧 *In Progress* | Complete schematics and board layout for the RAVVEN Mainboard and Expansion Shield. |
+| **Bill of Materials** | `.CSV` / Interactive | 🚧 *In Progress* | Full component list with LCSC/Digikey part numbers, sourcing links, and alternatives. |
 
 ## 🚀 Getting Started
 
@@ -52,6 +66,21 @@ RAVVEN is an educational platform designed to teach **Embedded Systems Engineeri
 * **Firmware:** Built on `no_std` Rust using `esp-hal`.
 * **Hardware:** Custom dual-ESP32 architecture (Motor Subsystem + Navigation Subsystem).
 * **Simulation:** Real-time browser-based Digital Twin (Virtual Maze).
+
+## ⚡ Technical Stack
+
+**Hardware:**
+* 2x ESP32-WROOM-32 microcontrollers
+* L298N dual H-bridge motor driver
+* N20 micro metal gearmotors with hall effect encoders
+* MPU6050 6-DOF IMU
+* 7.4V Li-ion battery system
+
+**Firmware:**
+* Rust (2024 Edition)
+* `esp-hal` for hardware abstraction
+* `embassy` for async runtime (optional)
+* Bare-metal `no_std` implementation
 
 ## 📦 Download
 
