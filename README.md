@@ -1,8 +1,12 @@
 # RAVVEN Engineering Data Package (EDP)
 
+<div align="center">
+
 ![Project Status](https://img.shields.io/badge/Status-Design%20Phase-orange)
 ![Version](https://img.shields.io/badge/EDP%20Version-v0.1--alpha-blue)
 ![License](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey)
+
+</div>
 
 > **🚧 Building in Public:**
 > Follow the engineering log and join the course waitlist at **[blog.ravven.dev](https://blog.ravven.dev)**.
